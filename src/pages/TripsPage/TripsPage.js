@@ -6,7 +6,6 @@ import foguete from '../../assets/img/rocket.jpg'
 
 export const TripsPage = () => {
     const history = useHistory();
-
     const trips = useTripsList() || [];
     // useProtectedPage();
 
@@ -16,15 +15,15 @@ export const TripsPage = () => {
 
     return (
         <TripsContainer>
+            <ImageContainer>
+                <img src={foguete} alt="Imagem foguete" />
+            </ImageContainer>
             <TextContainer>
                 <h2>Escolha sua viagem</h2>
                 {trips.map((trip) => {
                     return <p onClick={() => { goToTripDetails(trip.id) }}>{trip.name}</p>
                 })}
             </TextContainer>
-            <ImageContainer>
-                <img src={foguete} alt="Imagem foguete" />
-            </ImageContainer>
         </TripsContainer>
 
 

@@ -5,6 +5,7 @@ import { HomePage } from '../pages/HomePage/HomePage'
 import { SignupPage } from '../pages/SignupPage/SignupPage'
 import { ApplicationPage } from '../pages/ApplicationPage/ApplicationPage'
 import { TripsPage } from '../pages/TripsPage/TripsPage'
+import { TripDetailsPage } from '../pages/TripDetailsPage.js/TripDetailsPage'
 
 export const Router = ({ setChangeButton }) => {
     return (
@@ -31,6 +32,10 @@ export const Router = ({ setChangeButton }) => {
 
             <Route exact path={"/viagens"}>
                 <TripsPage />
+            </Route>
+
+            <Route exact path={"/trips/:id"}>
+                <TripDetailsPage />
             </Route>
 
         </Switch>

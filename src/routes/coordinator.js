@@ -18,6 +18,6 @@ export const goToTripsPage = (history) => {
     history.push("/viagens")
 }
 
-export const goToTripDetails = (history) => {
-    history.push(`/viagens/:id`)
+export const goBack = (history) => {
+    history.goBack();
 }

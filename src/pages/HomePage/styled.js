@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import { Button } from '@material-ui/core'
 
 export const HomeContainer = styled.div`
     display: flex;
@@ -41,6 +41,6 @@ export const TextContainer = styled.div`
         margin-top: 0;
     }
 `
-
-// export const primaryColor = "#4ea8de"
-// export const secondaryColor = "#6930c3"
+export const ButtonStyled = styled(Button)`
+    width: 280px;
+`

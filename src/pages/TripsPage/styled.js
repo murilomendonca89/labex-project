@@ -33,14 +33,13 @@ export const TextContainer = styled.div`
     p:hover {
         font-family: sans-serif;
         color: #4ea8de;
-        border: 2px solid black;
-        border-radius: 10px;
+       border-bottom: 1px solid black;
     }
 `
 export const ImageContainer = styled.div`
     width: 50vw;
     height: 76vh;
-    background: red;
+
     margin-top: 70px;
 
     img {
