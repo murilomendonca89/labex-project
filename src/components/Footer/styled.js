@@ -8,7 +8,6 @@ export const FooterContainer = styled.div`
     background: #4ea8de;
     text-transform: uppercase;
     text-align: center;
-    
 
     a {
         text-decoration: none;
@@ -16,7 +15,7 @@ export const FooterContainer = styled.div`
     }
 
     a:hover {
-      color: #6930c3;
+      color: black;
     }
     
     p {
