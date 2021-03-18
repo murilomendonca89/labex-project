@@ -1,12 +1,12 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router'
 import logo from '../../assets/img/logo_min.png'
 import { AppBar, Button } from '@material-ui/core'
 import { StyledToolBar } from './styled'
-import { goToHomePage, goToLogin } from '../../routes/coordinator'
+import { goToApplicationFormPage, goToHomePage, goToLogin, goToTripsPage } from '../../routes/coordinator'
 
 export const Header = ({ changeButton, setChangeButton }) => {
-    const history = useHistory();
+    const history = useHistory()
     const token = localStorage.getItem("token")
 
     const logout = () => {
@@ -33,11 +33,15 @@ export const Header = ({ changeButton, setChangeButton }) => {
                     Inicio
                 </Button>
 
-                <Button color="primary">
+                <Button color="primary"
+                    onClick={() => goToTripsPage(history)}
+                >
                     Viagens
                 </Button>
-                <Button color="primary">
-                    Cadastro
+                <Button color="primary"
+                    onClick={() => goToApplicationFormPage(history)}
+                >
+                    Canditate-se
                 </Button>
                 <Button
                     color="primary"

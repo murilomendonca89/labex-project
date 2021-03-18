@@ -1,6 +1,5 @@
 import React from 'react'
-import { LoginContainer, LogoContainer, InputsContainer } from './styled'
-import logo from '../../assets/img/logo_min.png'
+import { LoginContainer, InputsContainer } from './styled'
 import { TextField, Button } from '@material-ui/core'
 import { useForm } from '../../hooks/useForm'
 import { goToSignup } from '../../routes/coordinator'
@@ -25,11 +24,13 @@ export const LoginPage = ({ setChangeButton }) => {
 
     return (
         <LoginContainer>
-            <LogoContainer src={logo} alt="logo" />
 
             <InputsContainer>
+                <h1>Faça seu Login</h1>
                 <form onSubmit={onSubmitForm}>
                     <TextField
+                        autoFocus
+                        size={"medium"}
                         name={"email"}
                         value={form.email}
                         onChange={onChange}
@@ -69,7 +70,7 @@ export const LoginPage = ({ setChangeButton }) => {
                         color={"primary"}
                         margin={'normal'}
                         fullWidth
-                        onClick={goToSignup}
+                        onClick={() => { goToSignup(history) }}
                     >
                         Criar conta
                     </Button>

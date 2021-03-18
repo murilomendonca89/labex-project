@@ -10,13 +10,16 @@ export const SignupContainer = styled.div`
 `
 export const InputsContainer = styled.div`
     display: flex;
-    align-items: center;
     flex-direction: column;
-    width: 80vw;
-`
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    min-width: 350px;
+    margin-top: 15vh;
 
-export const LogoContainer = styled.img`
-    margin-top: 50px;
-    width: 25vw;
-    max-width: 150px;
+    h1 {
+        font-family: sans-serif;
+        text-transform: uppercase;
+        color: #4ea8de;
+    }
 `

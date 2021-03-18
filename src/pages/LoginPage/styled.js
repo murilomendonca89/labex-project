@@ -12,14 +12,15 @@ export const LoginContainer = styled.div`
 export const InputsContainer = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50vw;
     min-width: 350px;
-    align-items: center;
+    margin-top: 15vh;
 
-`
-
-export const LogoContainer = styled.img`
-    width: 25vw;
-    max-width: 150px;
-    margin-top: 50px;
+    h1 {
+        font-family: sans-serif;
+        text-transform: uppercase;
+        color: #4ea8de;
+    }
 `

@@ -10,10 +10,10 @@ export const goToHomePage = (history) => {
     history.push("/")
 }
 
-// export const goToApplicationFormPage = (history) => {
-//     history.push("/cadastro")
-// }
+export const goToApplicationFormPage = (history) => {
+    history.push("/cadastro")
+}
 
-// export const goToCreateTrip = (history) => {
-//     history.push("/criar-viagem")
-// }
+export const goToTripsPage = (history) => {
+    history.push("/viagens")
+}

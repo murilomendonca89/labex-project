@@ -1,7 +1,6 @@
 import React from 'react'
 import { useHistory } from "react-router-dom";
-import { SignupContainer, LogoContainer, InputsContainer } from './styled'
-import logo from '../../assets/img/logo_min.png'
+import { SignupContainer, InputsContainer } from './styled'
 import { TextField, Button } from '@material-ui/core'
 import { useForm } from '../../hooks/useForm'
 import { signup } from '../../services/user'
@@ -25,9 +24,8 @@ export const SignupPage = (setChangeButton) => {
 
     return (
         <SignupContainer>
-            <LogoContainer src={logo} alt="logo" />
-
             <InputsContainer>
+                <h1>Faça seu Cadastro</h1>
                 <form onSubmit={onSubmitForm}>
                     <TextField
                         name={"email"}
@@ -68,7 +66,7 @@ export const SignupPage = (setChangeButton) => {
                         variant={"text"}
                         color={"primary"}
                         margin={'normal'}
-                        onClick={goToLogin}
+                        onClick={() => { goToLogin(history) }}
                         fullWidth
                     >
                         Já tem conta? Faça seu Login.
