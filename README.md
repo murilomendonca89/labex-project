@@ -4,3 +4,11 @@
  - Consumo de API externa utilizando Axios.
  - Estilização criada através do Styled-Components e Material-UI.
  - Tecnologias utilizadas - React, Javascript.
+
+ ## Link para o Surge: 
+ - http://labex-project.surge.sh
+
+ ### Obs:
+ - As páginas não foram protegidas para facilitar o teste por outros usuários.
+ - Este projeto é apenas voltado para fins acadêmicos.
+ - Não foi executada a parte de responsividade neste projeto.
