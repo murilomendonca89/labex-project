@@ -6,9 +6,11 @@
  - Tecnologias utilizadas - React, Javascript.
 
  ## Link para o Surge: 
+ - Login: murilo@murilo.com
+ - Senha: 123456
  - http://labex-project.surge.sh
 
  ### Obs:
  - As páginas não foram protegidas para facilitar o teste por outros usuários.
  - Este projeto é apenas voltado para fins acadêmicos.
- - Não foi executada a parte de responsividade neste projeto.
+ - Não foi implementada a responsividade neste projeto.
