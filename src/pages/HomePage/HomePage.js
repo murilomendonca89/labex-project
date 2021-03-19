@@ -4,11 +4,11 @@ import { HomeContainer, ImageContainer, TextContainer, ButtonStyled } from './st
 import pilot from '../../assets/img/pilot.jpeg'
 
 import { goToTripsPage } from '../../routes/coordinator';
-// import { useProtectedPage } from '../../hooks/useProtectedPage'
+import { useProtectedPage } from '../../hooks/useProtectedPage'
 
 export const HomePage = () => {
     const history = useHistory();
-    // useProtectedPage();
+    useProtectedPage();
 
     return (
         <HomeContainer>

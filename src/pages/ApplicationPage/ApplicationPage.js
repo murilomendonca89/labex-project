@@ -5,9 +5,11 @@ import { ApplicationContainer, TextContainer, ImageContainer } from './styled'
 import { TextField, Button } from '@material-ui/core'
 import astronaut from '../../assets/img/astronaut.jpg'
 import { application } from '../../services/user'
+import { useProtectedPage } from '../../hooks/useProtectedPage'
 
 
 export const ApplicationPage = () => {
+    useProtectedPage()
     const history = useHistory()
     const [form, onChange, clear] = useForm(
         {

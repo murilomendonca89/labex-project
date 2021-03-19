@@ -5,10 +5,11 @@ import { TripsContainer, TextContainer, ImageContainer, ButtonStyled } from './s
 import { goBack } from '../../routes/coordinator'
 import { BASE_URL } from '../../constants/urls'
 import earth from '../../assets/img/earth.jpg'
-
+import { useProtectedPage } from '../../hooks/useProtectedPage'
 
 export const TripDetailsPage = () => {
     const history = useHistory();
+    useProtectedPage()
 
     const [trips, setTrips] = useState({});
     const pathParams = useParams();
