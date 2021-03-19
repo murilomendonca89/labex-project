@@ -9,6 +9,7 @@ export const HomeContainer = styled.div`
     width: 100vw;
     height: 76vh;
     background: black;
+    font-family: 'Roboto', sans-serif;
 `
 
 export const ImageContainer = styled.div`
@@ -27,16 +28,16 @@ export const TextContainer = styled.div`
     margin-left: 150px;
     width: 50vw;
     height: 550px;
-    font-family: sans-serif;
     text-transform: uppercase;
     color: #4ea8de ;
 
     h1 {
-        font-weight: 600;
+
         margin-bottom: 10px;
     }
 
     p {
+        font-weight: 300;
         color: #fff;
         margin-top: 0;
     }

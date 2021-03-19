@@ -22,4 +22,8 @@ export const InputsContainer = styled.div`
         text-transform: uppercase;
         color: #4ea8de;
     }
+
+    form {
+        width: 35vw;
+    }
 `

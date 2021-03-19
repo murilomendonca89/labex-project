@@ -23,3 +23,12 @@ export const signup = (form, clear, history, setChangeButton) => {
         })
         .catch((err) => console.error("Erro no cadastro", err.response.data.message))
 }
+
+export const application = (form, clear, history) => {
+    axios.post(`${BASE_URL}/trips/:id/apply`, form)
+        .then((res) => {
+            alert(res.data.message)
+            clear()
+        })
+        .catch((err) => console.error("Erro no cadastro", err.response.data.message))
+}

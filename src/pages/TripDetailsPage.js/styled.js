@@ -7,7 +7,6 @@ export const TripsContainer = styled.div`
     align-items: center;
     width: 100vw;
     height: 100vh;
-    font-family: sans-serif;
     text-transform: uppercase;
 `
 
@@ -30,7 +29,8 @@ export const TextContainer = styled.div`
     }
 
     p {
-        margin-bottom: 12px ;
+        font-weight: 400;
+        margin-bottom: 10px;
     }
 `
 export const ImageContainer = styled.div`
@@ -44,5 +44,6 @@ export const ImageContainer = styled.div`
 
 export const ButtonStyled = styled(Button)`
     width: 150px;
+    margin-top: 10px;
 `
 

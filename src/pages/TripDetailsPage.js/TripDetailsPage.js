@@ -5,7 +5,6 @@ import { TripsContainer, TextContainer, ImageContainer, ButtonStyled } from './s
 import { goBack } from '../../routes/coordinator'
 import { BASE_URL } from '../../constants/urls'
 import earth from '../../assets/img/earth.jpg'
-import { Button } from '@material-ui/core'
 
 
 export const TripDetailsPage = () => {
@@ -40,7 +39,7 @@ export const TripDetailsPage = () => {
                 <p><strong>Nome:</strong><br /> {trips.name}</p>
                 <p><strong>Planeta:</strong><br /> {trips.planet}</p>
                 <p><strong>Data:</strong><br /> {trips.date}</p>
-                <p><strong>Duração:</strong><br /> {trips.durationInDays} days.</p>
+                <p><strong>Duração:</strong><br /> {trips.durationInDays} dias.</p>
                 <p><strong>Descrição:</strong><br /> {trips.description}</p>
                 <ButtonStyled
                     variant={"contained"}

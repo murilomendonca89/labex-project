@@ -6,7 +6,7 @@ export const TripsContainer = styled.div`
     align-items: center;
     width: 100vw;
     height: 100vh;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
 `
 
@@ -31,9 +31,8 @@ export const TextContainer = styled.div`
     }
 
     p:hover {
-        font-family: sans-serif;
         color: #4ea8de;
-       border-bottom: 1px solid black;
+        border-bottom: 1px solid black;
     }
 `
 export const ImageContainer = styled.div`

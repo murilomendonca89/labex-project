@@ -29,7 +29,6 @@ export const LoginPage = ({ setChangeButton }) => {
                 <h1>Faça seu Login</h1>
                 <form onSubmit={onSubmitForm}>
                     <TextField
-                        autoFocus
                         size={"medium"}
                         name={"email"}
                         value={form.email}

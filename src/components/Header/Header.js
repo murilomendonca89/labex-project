@@ -1,8 +1,8 @@
 import React from 'react'
 import { useHistory } from 'react-router'
 import logo from '../../assets/img/logo_min.png'
-import { AppBar, Button } from '@material-ui/core'
-import { StyledToolBar } from './styled'
+import { AppBar } from '@material-ui/core'
+import { StyledToolBar, StyledButton } from './styled'
 import { goToApplicationFormPage, goToHomePage, goToLogin, goToTripsPage } from '../../routes/coordinator'
 
 export const Header = ({ changeButton, setChangeButton }) => {
@@ -26,29 +26,29 @@ export const Header = ({ changeButton, setChangeButton }) => {
         <AppBar color="inherit">
             <StyledToolBar>
                 <img src={logo} width="120px" alt="logo" />
-                <Button
+                <StyledButton
                     color="primary"
                     onClick={() => goToHomePage(history)}
                 >
                     Inicio
-                </Button>
+                </StyledButton>
 
-                <Button color="primary"
+                <StyledButton color="primary"
                     onClick={() => goToTripsPage(history)}
                 >
                     Viagens
-                </Button>
-                <Button color="primary"
+                </StyledButton>
+                <StyledButton color="primary"
                     onClick={() => goToApplicationFormPage(history)}
                 >
-                    Canditate-se
-                </Button>
-                <Button
+                    Inscreva-se
+                </StyledButton>
+                <StyledButton
                     color="primary"
                     onClick={changeButtonLogout}
                 >
                     {changeButton}
-                </Button>
+                </StyledButton>
             </StyledToolBar>
         </AppBar >
     )
