@@ -10,10 +10,6 @@
  - http://labex-project.surge.sh
 
  ### Obs:
- - As páginas não foram protegidas para facilitar o teste por outros usuários.
  - Este projeto é apenas voltado para fins acadêmicos.
-<<<<<<< HEAD
  - Não foi implementada a responsividade neste projeto.
-=======
- - Não foi implementada a responsividade neste projeto.
->>>>>>> e4cf690857bf11434f4604c269ca53dc05948ae4
+
