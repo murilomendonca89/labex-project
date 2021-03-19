@@ -7,7 +7,7 @@
 
  ## Link para o Surge: 
  - Caso queira testar o projeto solicite a senha através do email: murilomendonca@live.com
- - http://labex-project.surge.sh
+ - project-labex.surge.sh
 
  ### Obs:
  - Este projeto é apenas voltado para fins acadêmicos.
