@@ -6,8 +6,7 @@
  - Tecnologias utilizadas - React, Javascript.
 
  ## Link para o Surge: 
- - Login: murilo@murilo.com
- - Senha: 123456
+ - Caso queira testar o projeto solicite a senha através do email: murilomendonca@live.com
  - http://labex-project.surge.sh
 
  ### Obs:
